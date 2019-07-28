@@ -32,14 +32,14 @@
 				deltaLeft: 0,
 				deltaTop: 0,
 				dragIndex: null,
-				targetImageIndex: null,
-				imageList: []
+				targetImageIndex: null
 			}
 		},
-		onLoad: function(){
-			this.imageList = this.value
-		},
+	
 		computed:{
+			imageList(){
+			return this.value
+			},
 			posMoveImageLeft: function(){ 
 				return this.moveLeft + 'px'
 			},
